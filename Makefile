@@ -1,6 +1,6 @@
 CONTAINER_NAME = tbls-gettingstarted
 MYSQL_ROOT_PASSWORD = rootpassword
-MYSQL_DATABASE = mydatabase
+MYSQL_DATABASE = ecsite-sample-shops
 MYSQL_USER = user
 MYSQL_PASSWORD = password
 MYSQL_IMAGE = mysql:8.0
