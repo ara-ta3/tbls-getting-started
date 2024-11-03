@@ -1,4 +1,4 @@
-# ecsite-sample-shops
+# ecsite-samples
 
 ## Viewpoints
 

@@ -1,4 +1,4 @@
-dsn: mysql://user:password@127.0.0.1:3306/ecsite-sample-shops
+dsn: mysql://user:password@127.0.0.1:3306/ecsite-samples
 docPath: dbdocs
 viewpoints:
   - name: 注文
