@@ -20,7 +20,6 @@
 
 | Name | Columns | Comment | Type |
 | ---- | ------- | ------- | ---- |
-| [current_cart](current_cart.md) | 4 |  | BASE TABLE |
 | [users](users.md) | 4 |  | BASE TABLE |
 
 ## Relations
