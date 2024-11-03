@@ -7,7 +7,7 @@ MYSQL_IMAGE = mysql:8.0
 
 .PHONY: start stop clean
 
-start:
+start: clean
 	docker run --name $(CONTAINER_NAME) \
 		-e MYSQL_ROOT_PASSWORD=$(MYSQL_ROOT_PASSWORD) \
 		-e MYSQL_DATABASE=$(MYSQL_DATABASE) \
