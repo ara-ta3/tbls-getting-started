@@ -7,6 +7,8 @@ MYSQL_IMAGE = mysql:8.0
 
 TBLS=tbls
 
+include: ./env
+
 .PHONY: start stop clean
 
 start: clean
@@ -28,7 +30,7 @@ mysqlcli:
 	docker exec -it $(CONTAINER_NAME) mysql -u$(MYSQL_USER) -p$(MYSQL_PASSWORD) $(MYSQL_DATABASE)
 
 tbls-docs:
-	tbls doc --config tbls.yml --rm-dist
+	set -o allexport && . ./env && tbls doc --config tbls.yml --rm-dist
 
 lint:
 	tbls lint

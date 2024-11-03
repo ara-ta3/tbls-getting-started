@@ -1,4 +1,4 @@
-dsn: mysql://user:password@127.0.0.1:3306/ecsite-samples
+dsn: "mysql://${MYSQL_USER}:${MYSQL_PASSWORD}@${MYSQL_HOST}:3306/${MYSQL_DATABASE}"
 docPath: dbdocs
 viewpoints:
   - name: 注文
