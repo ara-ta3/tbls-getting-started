@@ -29,13 +29,13 @@ viewpoints:
           - current_cart
           - items
           - users
-  - name: 注文
-    desc: 注文した商品
+  - name: ユーザ
+    desc: ユーザ一覧
     tables:
       - users
     groups:
       - name: ユーザ
-        desc: アカウント一覧
+        desc: ユーザ一覧
         tables:
           - users
 
