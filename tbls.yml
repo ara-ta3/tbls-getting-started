@@ -1,17 +1,41 @@
 dsn: mysql://user:password@127.0.0.1:3306/ecsite-sample-shops
 docPath: dbdocs
 viewpoints:
-  - name: "business"
-    desc: "hoge"
+  - name: 注文
+    desc: 注文した商品
     tables:
       - orders
       - ordered_items
+      - items
+      - users
       - current_cart
     groups:
-      - name: 注文関連
-        desc: "fuga"
+      - name: 注文
+        desc: 注文した商品
         tables: 
           - orders
           - ordered_items
+          - items
+  - name: 購入前
+    desc: 購入前の商品
+    tables:
+      - items
+      - users
+      - current_cart
+    groups:
+      - name: 購入前
+        desc: 購入前の商品一覧
+        tables:
           - current_cart
+          - items
+          - users
+  - name: 注文
+    desc: 注文した商品
+    tables:
+      - users
+    groups:
+      - name: ユーザ
+        desc: アカウント一覧
+        tables:
+          - users
 
