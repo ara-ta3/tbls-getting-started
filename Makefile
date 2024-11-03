@@ -5,7 +5,7 @@ MYSQL_USER = user
 MYSQL_PASSWORD = password
 MYSQL_IMAGE = mysql:8.0
 
-TBLS=tbls
+TBLS=set -o allexport && . ./env && tbls
 
 include: ./env
 
@@ -30,10 +30,10 @@ mysqlcli:
 	docker exec -it $(CONTAINER_NAME) mysql -u$(MYSQL_USER) -p$(MYSQL_PASSWORD) $(MYSQL_DATABASE)
 
 tbls-docs:
-	set -o allexport && . ./env && tbls doc --config tbls.yml --rm-dist
+	$(TBLS) doc --config tbls.yml --rm-dist
 
 lint:
-	tbls lint
+	$(TBLS) lint
 
 diff:
-	tbls diff
+	$(TBLS) diff
