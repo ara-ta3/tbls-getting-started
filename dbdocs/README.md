@@ -4,7 +4,8 @@
 
 | Name | Description |
 | ---- | ----------- |
-| [business](viewpoint-0.md) | hoge |
+| [注文](viewpoint-0.md) | 注文した商品 |
+| [購入前](viewpoint-1.md) | 購入前の商品 |
 
 ## Tables
 

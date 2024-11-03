@@ -28,6 +28,12 @@ CREATE TABLE `items` (
 | price | decimal(10,2) |  | false |  |  |  |  |
 | stock | int | 0 | true |  |  |  |  |
 
+## Viewpoints
+
+| Name | Definition |
+| ---- | ---------- |
+| [購入前](viewpoint-1.md) | 購入前の商品 |
+
 ## Constraints
 
 | Name | Type | Definition |

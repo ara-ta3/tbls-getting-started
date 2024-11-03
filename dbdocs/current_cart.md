@@ -34,7 +34,7 @@ CREATE TABLE `current_cart` (
 
 | Name | Definition |
 | ---- | ---------- |
-| [business](viewpoint-0.md) | hoge |
+| [購入前](viewpoint-1.md) | 購入前の商品 |
 
 ## Constraints
 

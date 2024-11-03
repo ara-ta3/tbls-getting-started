@@ -1,22 +1,24 @@
-# 注文
+# 購入前
 
 ## Description
 
-注文した商品
+購入前の商品
 
 ## Tables
 
-### ユーザ
+### 購入前
 
-アカウント一覧
+購入前の商品一覧
 
 | Name | Columns | Comment | Type |
 | ---- | ------- | ------- | ---- |
+| [current_cart](current_cart.md) | 4 |  | BASE TABLE |
+| [items](items.md) | 5 |  | BASE TABLE |
 | [users](users.md) | 4 |  | BASE TABLE |
 
 ## Relations
 
-![er](viewpoint-0.svg)
+![er](viewpoint-1.svg)
 
 ---
 

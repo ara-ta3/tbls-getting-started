@@ -32,12 +32,6 @@ CREATE TABLE `ordered_items` (
 | quantity | int |  | false |  |  |  |  |
 | price_at_purchase | decimal(10,2) |  | false |  |  |  |  |
 
-## Viewpoints
-
-| Name | Definition |
-| ---- | ---------- |
-| [business](viewpoint-0.md) | hoge |
-
 ## Constraints
 
 | Name | Type | Definition |
