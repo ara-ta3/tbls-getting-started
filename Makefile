@@ -30,3 +30,8 @@ mysqlcli:
 tbls-docs:
 	tbls doc --config tbls.yml --rm-dist
 
+lint:
+	tbls lint
+
+diff:
+	tbls diff

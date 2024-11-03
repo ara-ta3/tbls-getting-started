@@ -37,4 +37,6 @@ viewpoints:
         desc: ユーザ一覧
         tables:
           - users
-
+lint:
+  requireViewpoints:
+    enabled: true
