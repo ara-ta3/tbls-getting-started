@@ -8,7 +8,7 @@ MYSQL_IMAGE = mysql:8.0
 .PHONY: start stop clean
 
 start:
-	docker run -d --name $(CONTAINER_NAME) \
+	docker run --name $(CONTAINER_NAME) \
 		-e MYSQL_ROOT_PASSWORD=$(MYSQL_ROOT_PASSWORD) \
 		-e MYSQL_DATABASE=$(MYSQL_DATABASE) \
 		-e MYSQL_USER=$(MYSQL_USER) \
@@ -22,3 +22,5 @@ stop:
 clean: stop
 	docker rm $(CONTAINER_NAME)
 
+mysqlcli:
+	docker exec -it $(CONTAINER_NAME) mysql -u$(MYSQL_USER) -p$(MYSQL_PASSWORD) $(MYSQL_DATABASE)
