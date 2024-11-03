@@ -28,5 +28,5 @@ mysqlcli:
 	docker exec -it $(CONTAINER_NAME) mysql -u$(MYSQL_USER) -p$(MYSQL_PASSWORD) $(MYSQL_DATABASE)
 
 tbls-docs:
-	TBLS_DSN="mysql://$(MYSQL_USER):$(MYSQL_PASSWORD)@127.0.0.1:3306/$(MYSQL_DATABASE)" tbls doc $(PWD)/dbdocs
+	tbls doc
 
