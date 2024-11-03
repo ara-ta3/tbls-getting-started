@@ -28,6 +28,12 @@ CREATE TABLE `orders` (
 | order_date | timestamp | CURRENT_TIMESTAMP | true | DEFAULT_GENERATED |  |  |  |
 | total_amount | decimal(10,2) |  | false |  |  |  |  |
 
+## Viewpoints
+
+| Name | Definition |
+| ---- | ---------- |
+| [注文](viewpoint-0.md) | 注文した商品 |
+
 ## Constraints
 
 | Name | Type | Definition |

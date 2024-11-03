@@ -6,12 +6,21 @@
 
 ## Tables
 
-### ユーザ
+### 注文
 
-アカウント一覧
+注文した商品
 
 | Name | Columns | Comment | Type |
 | ---- | ------- | ------- | ---- |
+| [items](items.md) | 5 |  | BASE TABLE |
+| [ordered_items](ordered_items.md) | 5 |  | BASE TABLE |
+| [orders](orders.md) | 4 |  | BASE TABLE |
+
+### -
+
+| Name | Columns | Comment | Type |
+| ---- | ------- | ------- | ---- |
+| [current_cart](current_cart.md) | 4 |  | BASE TABLE |
 | [users](users.md) | 4 |  | BASE TABLE |
 
 ## Relations

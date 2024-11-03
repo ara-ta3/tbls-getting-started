@@ -32,6 +32,12 @@ CREATE TABLE `ordered_items` (
 | quantity | int |  | false |  |  |  |  |
 | price_at_purchase | decimal(10,2) |  | false |  |  |  |  |
 
+## Viewpoints
+
+| Name | Definition |
+| ---- | ---------- |
+| [注文](viewpoint-0.md) | 注文した商品 |
+
 ## Constraints
 
 | Name | Type | Definition |
