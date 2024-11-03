@@ -1,24 +1,24 @@
-# ecsite-sample-shops
+# business
 
-## Viewpoints
+## Description
 
-| Name | Description |
-| ---- | ----------- |
-| [business](viewpoint-0.md) | hoge |
+hoge
 
 ## Tables
+
+### 注文関連
+
+fuga
 
 | Name | Columns | Comment | Type |
 | ---- | ------- | ------- | ---- |
 | [current_cart](current_cart.md) | 4 |  | BASE TABLE |
-| [items](items.md) | 5 |  | BASE TABLE |
 | [ordered_items](ordered_items.md) | 5 |  | BASE TABLE |
 | [orders](orders.md) | 4 |  | BASE TABLE |
-| [users](users.md) | 4 |  | BASE TABLE |
 
 ## Relations
 
-![er](schema.svg)
+![er](viewpoint-0.svg)
 
 ---
 

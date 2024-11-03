@@ -28,6 +28,12 @@ CREATE TABLE `orders` (
 | order_date | timestamp | CURRENT_TIMESTAMP | true | DEFAULT_GENERATED |  |  |  |
 | total_amount | decimal(10,2) |  | false |  |  |  |  |
 
+## Viewpoints
+
+| Name | Definition |
+| ---- | ---------- |
+| [business](viewpoint-0.md) | hoge |
+
 ## Constraints
 
 | Name | Type | Definition |

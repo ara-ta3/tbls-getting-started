@@ -30,6 +30,12 @@ CREATE TABLE `current_cart` (
 | item_id | int |  | false |  |  | [items](items.md) |  |
 | quantity | int | 1 | false |  |  |  |  |
 
+## Viewpoints
+
+| Name | Definition |
+| ---- | ---------- |
+| [business](viewpoint-0.md) | hoge |
+
 ## Constraints
 
 | Name | Type | Definition |
