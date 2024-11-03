@@ -1,2 +1,17 @@
 dsn: mysql://user:password@127.0.0.1:3306/ecsite-sample-shops
 docPath: dbdocs
+viewpoints:
+  - name: "business"
+    desc: "hoge"
+    tables:
+      - orders
+      - ordered_items
+      - current_cart
+    groups:
+      - name: 注文関連
+        desc: "fuga"
+        tables: 
+          - orders
+          - ordered_items
+          - current_cart
+
