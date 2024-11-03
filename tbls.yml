@@ -8,7 +8,6 @@ viewpoints:
       - ordered_items
       - items
       - users
-      - current_cart
     groups:
       - name: 注文
         desc: 注文した商品
