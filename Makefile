@@ -11,14 +11,24 @@ include: ./env
 
 .PHONY: start stop clean
 
-start: clean
-	docker run --name $(CONTAINER_NAME) \
+start: opt=
+start:
+	docker rm -f $(CONTAINER_NAME)
+	docker run --name $(CONTAINER_NAME) $(opt) \
 		-e MYSQL_ROOT_PASSWORD=$(MYSQL_ROOT_PASSWORD) \
 		-e MYSQL_DATABASE=$(MYSQL_DATABASE) \
 		-e MYSQL_USER=$(MYSQL_USER) \
 		-e MYSQL_PASSWORD=$(MYSQL_PASSWORD) \
 		-v $(PWD)/migrations:/docker-entrypoint-initdb.d \
 		-p 3306:3306 $(MYSQL_IMAGE)
+
+
+
+wait-for-mysql:
+	until docker exec $(CONTAINER_NAME) mysqladmin ping -u$(MYSQL_USER) -p$(MYSQL_PASSWORD) --silent; do \
+		echo "Waiting for MySQL to be ready..."; \
+		sleep 5; \
+	done
 
 stop:
 	docker stop $(CONTAINER_NAME)
