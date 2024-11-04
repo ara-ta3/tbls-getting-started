@@ -22,7 +22,7 @@ jobs:
 
       - name: Install tbls
         run: |
-          curl -L https://github.com/k1LoW/tbls/releases/download/v1.56.0/tbls_v1.56.0_linux_amd64.tar.gz | tar xvz
+          curl -L https://github.com/k1LoW/tbls/releases/download/v1.79.0/tbls_v1.79.0_linux_amd64.tar.gz | tar xvz
           sudo mv tbls /usr/local/bin/tbls
 
       - name: Run tbls lint
