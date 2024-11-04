@@ -27,7 +27,7 @@ start:
 wait-for-mysql:
 	until docker exec $(CONTAINER_NAME) mysqladmin ping -u$(MYSQL_USER) -p$(MYSQL_PASSWORD) --silent; do \
 		echo "Waiting for MySQL to be ready..."; \
-		sleep 5; \
+		sleep 10; \
 	done
 
 stop:
