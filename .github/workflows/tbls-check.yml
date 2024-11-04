@@ -1,6 +1,9 @@
 name: TBLs Schema Check
 
 on:
+  push:
+    branches:
+      - main
   pull_request:
 
 jobs:
